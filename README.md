@@ -4,7 +4,7 @@ ANY 320x200 16 color PNG image bootloader.
 This project includes :
 1) Bootloader source code written in assembly
 2) Image decoding programs written in qb64 and c++
-Compilation scripts are not included.
+!Compilation scripts are not included.
 
 Converting PNG to BIN :
 1) Put your PNG picture in the project directory
