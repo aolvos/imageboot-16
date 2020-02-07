@@ -1,5 +1,5 @@
 # imageboot-16
-ANY 320x200 16 color PNG image bootloader.
+Open-Source ANY 320x200 16 color PNG image bootloader.
 
 This project includes :
 1) Bootloader source code written in assembly
