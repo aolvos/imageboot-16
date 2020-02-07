@@ -14,9 +14,11 @@ Converting PNG to BIN :
 4) Run hex2bin
 
 splash.png - input file
+
 splash.bin - output file
 
 *Also check if qb64 outputs compiled executable in the project directory.*
 
 If you have any questions contact me on my email :)
+
 aolvos, 2020
