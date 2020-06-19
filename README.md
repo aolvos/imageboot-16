@@ -2,7 +2,7 @@
 Open-Source ANY 320x200 16 color PNG image bootloader.
 
 This project includes :
-1) Bootloader source code written in assembly
+1) Bootloader source code written in x86 assembly
 2) Image encoding program written in qb64
 
 Compilation scripts are not included.
