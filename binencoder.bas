@@ -1,6 +1,6 @@
 _TITLE "bin encoder by aolvos"
 SCREEN _NEWIMAGE(320, 200, 32)
-DIM ctable(768)
+DIM ctable(48)
 DIM datarray(320, 200)
 rest:
 LINE INPUT ; "Enter Source Filename: ", f$
@@ -24,7 +24,7 @@ DO
         ctable(asw + 2) = b
     END IF
     ctablemaker:
-    FOR i = 0 TO 765 STEP 3
+    FOR i = 0 TO 45 STEP 3
         IF ctable(i) = r AND ctable(i + 1) = g AND ctable(i + 2) = b THEN
             asw = i
             GOTO outp
@@ -47,7 +47,7 @@ LOOP UNTIL y = 200
 
 OPEN "out.bin" FOR OUTPUT AS #1
 
-FOR i = 0 TO 765 STEP 3
+FOR i = 0 TO 45 STEP 3
     PRINT #1, CHR$(ctable(i) / 4);
     PRINT #1, CHR$(ctable(i + 1) / 4);
     PRINT #1, CHR$(ctable(i + 2) / 4);
