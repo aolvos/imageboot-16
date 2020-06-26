@@ -24,7 +24,7 @@ DO
         ctable(asw + 2) = b
     END IF
     ctablemaker:
-    FOR i = 0 TO 45 STEP 3
+    FOR i = 0 TO n STEP 3
         IF ctable(i) = r AND ctable(i + 1) = g AND ctable(i + 2) = b THEN
             asw = i
             GOTO outp
