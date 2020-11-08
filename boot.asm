@@ -1,24 +1,10 @@
 ;imageboot-16 by aolvos, 2020
 Bits 16
 
-;clear screen
-
-xor ah,ah
-mov al,2
-int 10h
-
 ;set videomode
 
 mov ah,00h
 mov al,13h
-int 10h
-
-;set cursor position
-
-mov ah,0x02
-xor bh,bh
-xor dh,dh
-xor dl,dl
 int 10h
 
 ;create stack
@@ -103,7 +89,6 @@ mov ah,02h
 mov al,32
 mov ch,0
 mov dh,0
-mov dl,80h
 mov bx,0x1000
 int 13h
 
