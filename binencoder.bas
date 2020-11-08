@@ -48,9 +48,9 @@ LOOP UNTIL y = 200
 OPEN "out.bin" FOR OUTPUT AS #1
 
 FOR i = 0 TO 45 STEP 3
-    PRINT #1, CHR$(ctable(i) / 4);
-    PRINT #1, CHR$(ctable(i + 1) / 4);
-    PRINT #1, CHR$(ctable(i + 2) / 4);
+    PRINT #1, CHR$(ctable(i) / 4 - (ctable(i) MOD 4) / 10);
+    PRINT #1, CHR$(ctable(i + 1) / 4 - (ctable(i + 1) MOD 4) / 10);
+    PRINT #1, CHR$(ctable(i + 2) / 4 - (ctable(i + 2) MOD 4) / 10);
 NEXT i
 
 x = 0
